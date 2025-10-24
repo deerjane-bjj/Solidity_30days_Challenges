@@ -9,7 +9,7 @@ contract SaveMyName{
         name= _name;
         bio= _bio;
     }
-
+// add function : It’s like a small machine: you give it inputs → it does some work → optionally gives you an output.
     function retrieve() public view returns(string memory,string memory) {  //Return is a reserved keyword
         return(name,bio);
     }
