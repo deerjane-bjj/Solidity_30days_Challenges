@@ -3,7 +3,7 @@ pragma solidity^0.8.0;
 
 contract PollStation{
     string[] public candidateNames; //candidateNames is an array / list, not a dictionary
-    mapping(string=>uint256)voteCount; //mapping makes voteCount(the variable)becomes a dictionary
+    mapping(string=>uint256)voteCount; //mapping(a data type) makes voteCount(the variable)becomes a dictionary
 
     function addCandidateNames(string memory _candidateNames)public{
         candidateNames.push(_candidateNames);
